@@ -1,0 +1,47 @@
+<div class="Container">
+  <meta charset="UTF-8">
+        <div><img src="../../assets/Hotel_online_booking.jpg" style="height:800px; width:2000px;">
+        
+
+            
+  
+<form action="/action_page.php" onsubmit="return validateForm()" method ="GET">
+ 
+<fieldset>
+<legend>Personal Details:</legend>
+ 
+<label for="name">Username:</label>
+<input type="text" name="username" id="username" required  placeholder="Your Username" pattern="[a-zA-Z]{3;}"title="Please enter in more">
+
+<label for="email">Email:</label>
+<input type="text" name="Email" id="email" required  placeholder="Your Email" pattern="[a-zA-Z]{3;}@ [a-zA-Z]{3;}[.]{1} [a-zA-Z]{2;}" title="Please enter in a valid Email address">
+
+<label for="Phone">Phone:</label>
+<input type="tel" name="Phone" id="Phone" required  placeholder="Your Phone"  title="Please enter Phone number in this format:### ### ####">
+
+<label for="country">Country</label>
+<select id="Country"  name="Country">
+    <option value="ZAR">ZAR</option>
+    <option value="USA">USA</option>
+    <option value="NGN">NGN</option>
+    <option value="ZAR" selected>ZAR</option>
+  </select>
+</fieldset>
+<br>
+<fieldset>
+<legend>Booking Details:</legend>
+<label for="date">Booking Date: </label><input type="Date" name="date" min="2019-06-12">
+<label for="numberofguests">Numberofguests: </label><input type="number" min="1" max="6">
+<p>Do you require meals?</p>
+<label for="yesMeals">Yes: </label><input id="yesMeals" type="radio" name="yesMeals"value="YesMeals">
+<label for="noMeals">No: </label><input id="noMeals" type="radio" value="NoMeals">
+<br>
+<label for="Balcony">Do you require a balcony?: </label><input id="Balcony" type="checkbox" name="Balcony" value="yes" checked>
+<br>
+ 
+
+<button routerLink='/Login'>Submit</button> 
+
+</fieldset>
+</form>
+</div>

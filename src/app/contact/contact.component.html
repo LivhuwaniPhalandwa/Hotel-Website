@@ -1,0 +1,76 @@
+<body>
+    <div class="container">
+        <div style="text-align:center">
+          <h1>Contact Us</h1>
+          <p>Come and enjoy your stay with us, or leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="../../assets/map.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+                <div class="col-md-6">
+                    <div class="form-group">
+              <label for="fname">First Name</label>
+              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>  
+              </div>
+            </div>
+           
+<div class="col-md-6">
+                    <div class="form-group">
+              <label for="fname">First Name</label>
+              <label for="form_lastname">Lastname *</label>
+              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."> 
+              </div>
+            </div>
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="usa">ZAR</option>
+                <option value="ZAR" selected>ZAR</option>
+              </select>
+              
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+            </div>
+             
+            </form>
+          
+        </div>
+        </div>
+      </div>
+      
+      <div class="vl"></div>
+      <td class="wama">
+        <p class="thick">Address</p>
+        <p>285 Pasteur Road<br>
+        Rembrandt Park<br>
+        2090<br>
+        Cell :011 8266778<br>
+        Email Address info@HotelTshanduko.co.za
+      </p>
+      
+      
+     <p> <a href="#" class="fa fa-facebook"><img src='../../assets/facebook icon.png' style="width:10%"  /></a>Facebook.com/Hotel Tshanduko</p>
+     <p> <a href="#" class="fa fa-twitter"><img src='../../assets/twitter.png'style="width:10%" /></a>@Hotel Tshanduko</p>
+      </td>
+      
+    
+<div class="contact">
+ 
+    <router-outlet routerlink='/Contact'></router-outlet>
+</div>
